@@ -33,8 +33,14 @@ error_reporting(E_ALL);
         }
     }
 
-    printArr($numbers);
+    function largest($numbers)
+    {
+        $largest = max($numbers);
+        echo "<p>The largest number is $largest</p>";
+    }
 
+    printArr($numbers);
+    largest($numbers);
 ?>
 
 </body>
